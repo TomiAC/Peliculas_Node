@@ -1,0 +1,33 @@
+####Traer peliculas
+GET http://localhost:3000/peliculas
+
+###Traer una pelicula por ID
+GET http://localhost:3000/peliculas/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+###Traer peliculas de un Genero en Particular
+GET http://localhost:3000/peliculas?genre=Drama
+
+###Crear una pelicula
+POST http://localhost:3000/peliculas
+Content-Type: application/json
+
+{
+    "title": "El padrino",
+    "year" : 1975,
+    "director": "Francis Copola",
+    "duration": 175,
+    "poster": "https://img.fruugo.com/product/4/49/14441494_max.jpg",
+    "genre": ["Crime", "Drama"],
+    "rate": 10
+}
+
+###Actualizar una pelicula
+PATCH http://localhost:3000/peliculas/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+    "year": 2000
+}
+
+###Eliminar pelicula
+DELETE http://localhost:3000/peliculas/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
