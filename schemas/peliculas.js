@@ -9,7 +9,8 @@ const schemaPelicula = zod.object({
     rate :  zod.number().min(0).max(10).default(0),
     genre : zod.array(
         zod.enum(['Drama', 'Action', 'Crime', 'Adventure', 'Sci-Fi', 'Romance', 'Animation', 'Biography', 'Fantasy'])
-    )
+    ),
+    anio: zod.number().int().min(1850).max(2100)
 })
 
 export function validarPelicula(objecto) {

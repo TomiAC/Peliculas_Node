@@ -1,5 +1,5 @@
-import { modeloPelicula } from "../modelos/pelicula";
-import { validarPelicula, validarPeliculaParcial} from './schemas/peliculas.js'
+import { modeloPelicula } from "../modelos/pelicula-pg.js";
+import { validarPelicula, validarPeliculaParcial} from '../schemas/peliculas.js'
 
 export class ControladorPelicula{
     

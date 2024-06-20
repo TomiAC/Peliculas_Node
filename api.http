@@ -2,10 +2,10 @@
 GET http://localhost:3000/peliculas
 
 ###Traer una pelicula por ID
-GET http://localhost:3000/peliculas/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+GET http://localhost:3000/peliculas/28982da3-6825-4bf6-984e-fd847cf6e5bd
 
 ###Traer peliculas de un Genero en Particular
-GET http://localhost:3000/peliculas?genre=Drama
+GET http://localhost:3000/peliculas?genre=Romance
 
 ###Crear una pelicula
 POST http://localhost:3000/peliculas
@@ -22,12 +22,12 @@ Content-Type: application/json
 }
 
 ###Actualizar una pelicula
-PATCH http://localhost:3000/peliculas/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+PATCH http://localhost:3000/peliculas/31211b62-0b1d-4949-aa28-295179a3b9a0
 Content-Type: application/json
 
 {
-    "year": 2000
+    "anio": 2000
 }
 
 ###Eliminar pelicula
-DELETE http://localhost:3000/peliculas/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+DELETE http://localhost:3000/peliculas/28982da3-6825-4bf6-984e-fd847cf6e5bd

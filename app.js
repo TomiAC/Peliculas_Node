@@ -1,6 +1,6 @@
 import express, { response } from 'express'
 import cors from 'cors'
-import { peliculasRouter } from './routes/peliculas'
+import { peliculasRouter } from './routes/peliculas.js'
 
 const app = express()
 const PORT = process.env.PORT ?? 3000
