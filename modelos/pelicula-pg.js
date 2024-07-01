@@ -1,12 +1,20 @@
 import pg from 'pg'
 
 const client = new pg.Client({
+    user: 'proyecto_peliculas_user',
+    password: 'jg09DzK0tRtvqLSMthShHSzxshcBiX0o',
+    host: 'dpg-cq1a892ju9rs73bjog30-a',
+    port: '5432',
+    database: 'proyecto_peliculas'
+})
+
+/*const client = new pg.Client({
     user: 'postgres',
     password: 'Tomi2024',
     host: 'localhost',
     port: '5432',
     database: 'Proyecto_Peliculas'
-})
+})*/
 
 await client.connect()
 
